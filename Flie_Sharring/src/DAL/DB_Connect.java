@@ -14,6 +14,10 @@ public class DB_Connect {
     private final String DB_URL = "jdbc:mysql://localhost/myjava";
     private final String USER_NAME = "root";
     private final String USER_PASS = "";
+
+    public Connection getmConnection() {
+        return mConnection;
+    }
     private Connection mConnection;
 
 //================CONNECTION================
@@ -23,7 +27,7 @@ public class DB_Connect {
             mConnection = DriverManager.getConnection(DB_URL, USER_NAME, USER_PASS);
 
             if (mConnection != null) {
-                System.out.println("Connected");
+                System.out.println("DB_connect is Connected");
             }
         } catch (SQLException ex) {
             ex.printStackTrace();
