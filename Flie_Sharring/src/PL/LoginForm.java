@@ -1,6 +1,7 @@
 package PL;
 
 import BL.Login;
+import PL.ClientForm;
 import DAL.DB_Connect;
 import com.sun.source.tree.BreakTree;
 import javax.swing.JOptionPane;
@@ -163,7 +164,9 @@ public class LoginForm extends javax.swing.JFrame {
                 } else {
                     if (loginObject.Login(n, e, p)) {
                         System.out.println("login successfull");
-                        System.exit(1);
+                        ClientForm client = new ClientForm();
+                        client.show();
+                        //System.exit(1);
                         setVisible(false);
                     }
                     
