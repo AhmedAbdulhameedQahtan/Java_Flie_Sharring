@@ -2,8 +2,6 @@ package PL;
 
 import BL.Login;
 import PL.ClientForm;
-import DAL.DB_Connect;
-import com.sun.source.tree.BreakTree;
 import javax.swing.JOptionPane;
 
 /**
@@ -36,6 +34,7 @@ public class LoginForm extends javax.swing.JFrame {
         RegisterRadioButton = new javax.swing.JRadioButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setLocation(new java.awt.Point(400, 150));
         setName("Login"); // NOI18N
         setResizable(false);
 
@@ -185,7 +184,6 @@ public class LoginForm extends javax.swing.JFrame {
                 t = false;break;
             }
         }
-        //=========
     }//GEN-LAST:event_LoginButtonActionPerformed
 //============================ cancle button====================================
     private void CancelButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CancelButtonActionPerformed
